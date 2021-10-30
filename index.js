@@ -10,6 +10,7 @@ function main() {
 
   const controls = new THREE.OrbitControls(camera, canvas);
   controls.target.set(0, 5, 0);
+  controls.enablePan = false;
   controls.update();
 
   const scene = new THREE.Scene();
@@ -22,9 +23,6 @@ function main() {
   directionalLight.position.set(0, 1, 0);
   directionalLight.castShadow = true;
   scene.add(directionalLight);
-
-  let dragControls = new THREE.DragControls(scene.children, camera, canvas);
-  dragControls.enabled = false;
 
   let light = new THREE.PointLight(0xc4c4c4, 10);
   light.position.set(0, 300, 500);
