@@ -10,7 +10,7 @@ function main() {
 
   const controls = new THREE.OrbitControls(camera, canvas);
   controls.target.set(0, 5, 0);
-  controls.staticMoving = true;
+  controls.enablePan = false;
   controls.update();
 
   const scene = new THREE.Scene();
