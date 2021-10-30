@@ -54,7 +54,10 @@ function main() {
 
 
       // update the Trackball controls to handle the new size
-      controls.maxDistance = boxSize;
+      console.log(boxSize, 'boxSize');
+      console.log(innerHeight, 'innerHeight');
+      controls.minDistance = boxSize / 1.3;
+      controls.maxDistance = canvas.clientWidth > 1000 ? boxSize : boxSize * 2;
       controls.target.copy(boxCenter);
       controls.update();
     });
