@@ -23,6 +23,9 @@ function main() {
   directionalLight.castShadow = true;
   scene.add(directionalLight);
 
+  let dragControls = new THREE.DragControls(scene.children, camera, canvas);
+  dragControls.enabled = false;
+
   let light = new THREE.PointLight(0xc4c4c4, 10);
   light.position.set(0, 300, 500);
   scene.add(light);
