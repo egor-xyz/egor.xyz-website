@@ -1,0 +1,12 @@
+{
+  "name": "3d-car",
+  "version": "1.0.0",
+  "author": "Egor Stronhin",
+  "homepage": "https://egor-xyz.github.io/3d-car",
+  "scripts": {
+    "deploy": "gh-pages -d ."
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
