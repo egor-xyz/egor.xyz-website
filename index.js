@@ -51,8 +51,6 @@ function main() {
       const boxSize = box.getSize(new THREE.Vector3()).length();
       const boxCenter = box.getCenter(new THREE.Vector3());
 
-
-
       // update the Trackball controls to handle the new size
       controls.minDistance = boxSize / 1.5;
       controls.maxDistance = canvas.clientWidth > 1000 ? boxSize : boxSize * 2;
