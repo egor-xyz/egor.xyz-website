@@ -15,8 +15,8 @@ function main() {
   const scene = new THREE.Scene();
   scene.background = new THREE.Color(0x111213);
 
-  let hlight = new THREE.AmbientLight(0x404040, 100);
-  scene.add(hlight);
+  let aLight = new THREE.AmbientLight(0x404040, 20);
+  scene.add(aLight);
 
   let directionalLight = new THREE.DirectionalLight(0xfffff, 10);
   directionalLight.position.set(0, 1, 0);
