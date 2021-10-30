@@ -9,11 +9,12 @@ html, body {
 }
 .title {
   position: fixed;
-  z-index: 9999;
+  z-index: 1;
   top: 25px;
   left: 0;
   width: 100%;
   text-align: center;
   color: #fff;
   font-family: 'Roboto', sans-serif;
+  font-size: 30px;
 }
